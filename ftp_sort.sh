@@ -16,8 +16,8 @@
 #first parameter ($1) = path to source directory to be parsed
 #second paramter ($1) = path to destination directory for files to be put in (sorted)
 
-#ensure directory isn't empty before proceeding
-files=$(shopt -s nullglob dotglob; echo $1/*)
+#ensure directory contains jpg files before proceeding
+files=$(shopt -s nullglob dotglob; echo $1/*.jpg)
 if (( ${#files} ))
 then
   #get a list of dates (YYYY-MM-DD) represented by the image files
