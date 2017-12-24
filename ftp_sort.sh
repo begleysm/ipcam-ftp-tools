@@ -1,4 +1,4 @@
-#this bash script will sort a collection of .jpg files into a directory structure as follows
+#this bash script will sort a collection of .jpg/.mp4 files into a directory structure as follows
 # date
 #  hour
 #  hour
@@ -11,17 +11,17 @@
 #a general ftp upload location for security IP camera and sorting the contents by date and hour
 
 #Sean Begley
-#2017-07-23
+#2017-12-25
 
 #first parameter ($1) = path to source directory to be parsed
 #second paramter ($1) = path to destination directory for files to be put in (sorted)
 
-#ensure directory contains jpg files before proceeding
-files=$(shopt -s nullglob dotglob; echo $1/*.jpg)
+#ensure directory contains jpg/mp4 files before proceeding
+files=$(shopt -s nullglob dotglob; echo $1/*.jpg $1/*.mp4)
 if (( ${#files} ))
 then
-  #get a list of dates (YYYY-MM-DD) represented by the image files
-  for each in $1/*.jpg
+  #get a list of dates (YYYY-MM-DD) represented by the image/video files
+  for each in $1/*.{jpg,mp4}
   do
     date=$(date +%Y-%m-%d-%H -r "$each");
     _DATES+=($date);
