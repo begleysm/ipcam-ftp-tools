@@ -1,3 +1,4 @@
+#!/bin/bash
 #this bash script will sort a collection of .jpg/.mp4 files into a directory structure as follows
 # date
 #  hour
@@ -11,7 +12,7 @@
 #a general ftp upload location for security IP camera and sorting the contents by date and hour
 
 #Sean Begley
-#2017-12-25
+#2019-07-14
 
 #first parameter ($1) = path to source directory to be parsed
 #second paramter ($1) = path to destination directory for files to be put in (sorted)
