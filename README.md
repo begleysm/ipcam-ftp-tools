@@ -12,6 +12,7 @@ This repository contains scripts I wrote for administering a FTP server that act
 
 ## bin-by-date
 `bin-by-date` will recursivly copy or move "unsorted" files from a source directory to a destination directory where it will create a structure of "date" folders and in each "date" folder will be a set of "hour" folders.  Each "hour" folder will contain all of the uploaded files, with specified extensions, from that "date"/"hour".  The source folder can optionally be deleted afterwards.
+
 first parameter `$1` = path to source directory to be parsed `/path/to/source/dir/`
 second paramter `$2` = path to destination directory for files to be put in (sorted) `/path/to/destination/dir/`
 third parameter `$3` = comma delimited list of extensions to sort `jpg,mp4`
