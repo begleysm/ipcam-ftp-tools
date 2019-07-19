@@ -8,7 +8,7 @@ https://github.com/begleysm/ipcam-ftp-tools
 
 2019-07-17
 
-This repository contains scripts I wrote for administering a FTP server that acts as a host for uploaded images/videos from IP Cameras.  These scripts should also be useful in other applications.
+This repository contains scripts I wrote for administering an FTP server that acts as a host for uploaded images/videos from IP Cameras.  These scripts should also be useful in other applications.
 
 ## bin-by-date
 `bin-by-date` will recursivly copy or move "unsorted" files from a source directory to a destination directory where it will create a structure of "date" folders and in each "date" folder will be a set of "hour" folders.  Each "hour" folder will contain all of the uploaded files, with specified extensions, from that "date"/"hour".  The source folder can optionally be deleted afterwards.
