@@ -6,7 +6,7 @@ https://steamforge.net/wiki
 
 https://github.com/begleysm/ipcam-ftp-tools
 
-2019-07-17
+2019-11-19
 
 This repository contains scripts I wrote for administering an FTP server that acts as a host for uploaded images/videos from IP Cameras.  These scripts should also be useful in other applications.
 
