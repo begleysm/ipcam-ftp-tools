@@ -38,3 +38,5 @@ example usage: `./del-older-than /path/to/parent/directory/ 14`
 * second parameter `$2` is a comma delimited list of file extensions to NOT delete `jpg,mp4`
 
 example usage: `./del-not-ext /path/to/directory jpg,mp4`
+
+  Note that this script was made somewhat obsolete by the combination of specified extensions and the `move-delete` mode of `bin-by-date`.  I've left it intact because it might be useful in its own right.
